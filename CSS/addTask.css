@@ -1,94 +1,11 @@
-#addTask {
-  background-color: var(--secondColor);
-  padding: 19% 38%;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  display: none;
-}
-
-#addTask > form {
-  width: 24%;
-  height: 24%;
-  text-align: center;
-}
-
-#taskTitle {
-  background-color: transparent;
-  border-style: none;
-  outline: none;
-  border-bottom: 4px solid var(--mainColor);
-  font-size: 1.7em;
-}
-#taskTitle::placeholder {
-  color: var(--mainColor);
-}
-
-form > span {
-  display: flex;
-  padding-bottom: 2px;
-  border-bottom: 1px solid gray;
-}
-span > label {
-  flex: 1;
-  text-align: center;
-  padding: 0.2em 0.1em;
-  color: var(--mainColor);
-}
-span > input { visibility: hidden; }
-
-input:checked + label {
-  color: var(--secondColor);
-  border-radius: 1.5em;
-  text-align: center;
-  padding: 0.2em 0.1em;
-  transition-duration: 150ms;
-}
-#low:checked + label {
-  background-color: var(--lowPriority);
-}
-#medium:checked + label {
-  background-color: var(--mediumPriority);
-}
-#high:checked + label {
-  background-color: var(--highPriority);
-}
-
-
-#taskNotes {
-  background-color: transparent;
-  border-style: none;
-  outline: none;
-  margin: 0.4em 0 0.8em;
-  border-bottom: 2px solid var(--mainColor);
-  font-size: 1.2em;
-  width: 76%;
-}
-#taskNotes::placeholder {
-  color: var(--mainColor);
-}
-
-#cancel,#done{
-  border-style: none;
-  border-radius: 1.5em;
-  padding: 0.2em 0.6em;
-  font-size: 1.1em;
-  margin: 0.3em 0.9em;
-  border: 2px solid var(--secondColor);
-
-}
-#cancel{
-  background-color: transparent;
-  color: var(--mainColor);
-}
-#done{
+#addTaskDiv{
+  display: block;
   background-color: var(--mainColor);
-  color: var(--secondColor);
 }
-#cancel:hover{
-  border: 2px solid var(--mainColor);
+
+form{
+  display: flex;
 }
-#done{
-  border: 2px solid var(--secondColor);
+form::-ms-value{
+  color: blue;
 }

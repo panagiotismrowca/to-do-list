@@ -1,13 +1,8 @@
-const addButton = document.querySelector("#addButton");
-const addTaskDiv = document.querySelector("#addTask");
-const cancelButton = document.querySelector("#cancel");
+const addTaskButton = document.querySelector('#addTaskButton');
+const addTaskDiv = document.querySelector('#addTaskDiv');
 
-const openNewTaskDiv = () => {
-  addTaskDiv.style.display = "block";
-}
-const closeNewTaskDiv = () => {
-  addTaskDiv.style.display = "none";
+const openAddTaskDiv = () => {
+  addTaskDiv.style.display = 'block';
 }
 
-addButton.addEventListener("click",openNewTaskDiv);
-cancelButton.addEventListener("click",closeNewTaskDiv);
+addTaskButton.addEventListener('click',openAddTaskDiv);

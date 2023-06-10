@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500&display=swap");
 
 :root {
-  --mainColor: #be3455;
-  --secondColor: #ffe9e9;
-  --highPriority: #be3455;
-  --mediumPriority: #3455be;
-  --lowPriority: #55be34;
+  --mainColor: #333366;
+  --secondColor: #ccccff;
+  --highPriority: #882244;
+  --mediumPriority: #224488;
+  --lowPriority: #228844;
 }
 
 body {
@@ -16,7 +16,7 @@ body {
 /* Style for header */
 header {
   background-color: var(--mainColor);
-  color: #edcdc2;
+  color: var(--secondColor);
 
   width: 100%;
   
@@ -27,16 +27,14 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-header > h1 {
-  font-size: 1.6em;
+  
   font-weight: 500;
-
-  padding: 12px 24px;
-
-  color: var(--secondColor);
 }
-#addButton {
+h1 {
+  font-size: 1.6em;
+  padding: 12px 24px;
+}
+#addTaskButton {
   margin: 24px;
   padding: 0.4em 0.8em;
 
@@ -48,18 +46,13 @@ header > h1 {
   font-weight: 500;
   font-size: 1.3em;
 }
-#addButton > span {
-  border-radius: 50%;
-  background-color: var(--mainColor);
-  color: var(--secondColor);
-  padding: 0.2em 0.5em;
-  margin-right: 0.2em;
-}
-#addButton:hover {
-  color: var(--secondColor);
-  background-color: var(--mainColor);
-  border: 2px solid var(--secondColor);
+#addTaskButton:hover {
   padding: calc(0.4em - 2px) 0.8em;
+
+  border-radius: 1.5em;
+  border: 2px solid var(--secondColor);
+  background-color: transparent;
+  color: var(--secondColor);
   transition-duration: 200ms;
 }
 
@@ -90,7 +83,7 @@ li{
   font-weight: 300;
 } */
 
-/* Style for footer
+/* Style for footer*/
 footer{
   background-color: var(--mainColor);
   text-align: end;
@@ -105,4 +98,3 @@ footer>p{
   color: var(--secondColor);
   font-weight: 300;
 }
-*/

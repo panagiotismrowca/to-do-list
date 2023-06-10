@@ -1,7 +1,23 @@
-<?php include "connection_db.inc.php"; ?>
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="../CSS/main.css">
+    <link rel="stylesheet" href="../CSS/addTask.css">
+    <script src="../JS/script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>ToDo List</h1>
+      <button id="addTaskButton">Add new task</button> 
+    </header>
 
-<?php include "header.inc.php"; ?>
+    <?php include "connection_db.inc.php"; ?>
 
-<?php include "navmenu.inc.php"; ?>
+    <?php include "navmenu.inc.php"; ?>
 
-<?php include "addnewtask.inc.php";?>
+    <?php include "addNewTask.inc.php";?>
+    <footer>
+      <p>All rights reserved &copy <?php echo date('Y');?></p>
+    </footer>
+  </body>
+</html>
