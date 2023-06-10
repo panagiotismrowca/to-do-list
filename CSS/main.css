@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500&display=swap");
+
+:root {
+  --mainColor: #be3455;
+  --secondColor: #ffe9e9;
+  --highPriority: #be3455;
+  --mediumPriority: #3455be;
+  --lowPriority: #55be34;
+}
+
+body {
+  margin: 0;
+  font-family: "Lexend", sans-serif;
+}
+
+/* Style for header */
+header {
+  background-color: var(--mainColor);
+  color: #edcdc2;
+
+  width: 100%;
+  
+  position: sticky;
+  top: 0;
+  right: 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header > h1 {
+  font-size: 1.6em;
+  font-weight: 500;
+
+  padding: 12px 24px;
+
+  color: var(--secondColor);
+}
+#addButton {
+  margin: 24px;
+  padding: 0.4em 0.8em;
+
+  border-radius: 1.5em;
+  border-style: none;
+  background-color: var(--secondColor);
+  color: var(--mainColor);
+  
+  font-weight: 500;
+  font-size: 1.3em;
+}
+#addButton > span {
+  border-radius: 50%;
+  background-color: var(--mainColor);
+  color: var(--secondColor);
+  padding: 0.2em 0.5em;
+  margin-right: 0.2em;
+}
+#addButton:hover {
+  color: var(--secondColor);
+  background-color: var(--mainColor);
+  border: 2px solid var(--secondColor);
+  padding: calc(0.4em - 2px) 0.8em;
+  transition-duration: 200ms;
+}
+
+/* Style for navigate menu */
+ul{
+  background-color: var(--secondColor);
+  width: 24%;
+  position: fixed;
+  bottom: 4em;
+  right: 38%;
+  list-style: none;
+  display: flex;
+  padding: 4px;
+  border-radius: 1.5em;
+}
+li{
+  padding: 12px 12px;
+  color: var(--mainColor);
+  font-weight: 500;
+  border-radius: 1.5em;
+  flex: 1;
+  text-align: center;
+}
+
+/* .active{
+  color: var(--secondColor);
+  background-color: var(--mainColor);
+  font-weight: 300;
+} */
+
+/* Style for footer
+footer{
+  background-color: var(--mainColor);
+  text-align: end;
+  width: 100%;
+  padding: 4px 0;
+  position: static;
+  bottom: 0;
+}
+footer>p{
+  padding: 0 12px;
+
+  color: var(--secondColor);
+  font-weight: 300;
+}
+*/
