@@ -1,16 +1,22 @@
-const addTaskButton = document.querySelector('#addTaskButton');
+const addTaskButton = document.querySelector("#addTaskButton");
+const confirmNewTaskButton = document.querySelector('#confirmNewTaskButton');
+const cancelNewTaskButton = document.querySelector('#cancelNewTaskButton');
+const backButton = document.querySelector('#backButton');
+
+const modal = document.querySelector('#modal');
 const addTaskDiv = document.querySelector('#addTaskDiv');
-const cancelButton = document.querySelector('#cancelButton');
-const exitDiv = document.querySelector('#exitDiv');
+const succDiv = document.querySelector("#succTaskAddition");
 
-const openAddTaskDiv = () => {
+
+const openNewTaskDiv = () => {
+  modal.style.display = 'block';
   addTaskDiv.style.display = 'block';
-  addTaskDiv.style.transitionDuration = '300ms';
-}
-const openExitDiv = () => {
-  exitDiv.style.display = 'block';
-  exitDiv.style.transitionDuration = '300ms';
-}
+};
+const closeNewTaskDiv = () => {
+  modal.style.display = 'none';
+  addTaskDiv.style.display = 'none';
+};
 
-addTaskButton.addEventListener('click',openAddTaskDiv);
-cancelButton.addEventListener('click',openExitDiv);
+
+addTaskButton.addEventListener('click',openNewTaskDiv);
+confirmNewTaskButton.addEventListener('click', closeNewTaskDiv);
