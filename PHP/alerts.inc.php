@@ -16,18 +16,8 @@
         <input type='submit' class='inp btn btn--cancel' id='cancelNewTaskButton' name='cancel' value='Cancel'>
       </div>
     </form> 
-  </div>
-
-
-  <!-- <div id='exitDiv'>
-    <p> Αre you sure you want to cancel the task <?php $taskName = $_POST['taskName']?? NULL ; echo $taskName;?> ?</p>
-    <button id='exit'> Yes </button>
-    <button id='back'> Back </button>
-  </div> -->
-  
+  </div>  
 </div>
-
-
 
 <!-- PHP for new tasks -->
 <?php
@@ -35,10 +25,10 @@ if(isset($_POST['confirm'])){
   $newTaskName = $_POST['newTaskName'] ?? 'NULL';
   $newTaskDescription = $_POST['newTaskDescription'] ?? 'NULL';
   $taskPriority = $_POST['taskPriority'] ?? 1;
+  unset($_POST);
 
   $statement = $conn->prepare('INSERT INTO todos (name_todo,priority_todo,decription_todo) VALUES (?, ?, ?)');
   $statement->execute([$newTaskName, $taskPriority, $newTaskDescription]);
-}if(isset($_POST['cancel'])){
-  $newTaskName = $_POST['newTaskName'] ?? 'NULL';
-};;
+  echo "<meta http-equiv='refresh' content='0'>";
+};
 ?>

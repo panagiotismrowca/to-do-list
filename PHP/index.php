@@ -12,7 +12,8 @@
     </header>
 
     <?php include "connection_db.inc.php"; 
-    ini_set('display_errors', 0);?>
+    ini_set('display_errors', 0);
+?>
     
     <?php include "tasks.inc.php";?>
     

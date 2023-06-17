@@ -19,7 +19,7 @@ header {
   color: var(--secondColor);
 
   width: 100%;
-  
+
   position: sticky;
   top: 0;
   right: 0;
@@ -27,14 +27,14 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
+
   font-weight: 500;
 }
 h1 {
   font-size: 1.6em;
   padding: 12px 24px;
 }
-#addTaskButton{
+#addTaskButton {
   margin: 24px;
   padding: 0.4em 0.8em;
 
@@ -42,7 +42,7 @@ h1 {
   border-style: none;
   background-color: var(--secondColor);
   color: var(--mainColor);
-  
+
   font-weight: 500;
   font-size: 1.3em;
 }
@@ -57,10 +57,8 @@ h1 {
 }
 
 /* Style for navmenu */
-#navMenuDiv{
-  box-shadow: 0 0 12px saddlebrown;
-}
-ul{
+
+ul {
   background-color: var(--secondColor);
   width: 24%;
   position: fixed;
@@ -70,9 +68,9 @@ ul{
   display: flex;
   padding: 4px;
   border-radius: 1.5em;
-  box-shadow: 0px -10px 12px #ccccff;
+  box-shadow: 0 0 12px 4px #f0f0ff;
 }
-li{
+li {
   padding: 12px 12px;
   color: var(--mainColor);
   font-weight: 500;
@@ -82,7 +80,7 @@ li{
 }
 
 /* Style for list */
-#taskList{
+#taskList {
   background-color: #f0f0ff;
   padding: 3%;
   width: 94%;
@@ -90,7 +88,7 @@ li{
   margin: 0;
 }
 
-.task{
+.task {
   background-color: #ccccff;
   width: 88%;
   height: 10%;
@@ -101,43 +99,50 @@ li{
   text-align: start;
 }
 
-.task>div{ 
+.task > div {
   flex: 1;
   text-align: center;
 }
-.btn--completed{
+.btn--completed {
   background-color: var(--mainColor);
   color: var(--secondColor);
   border: 2px solid var(--mainColor);
   margin: 0.3em;
 }
-.btn--completed:hover{ border: 2px solid var(--secondColor); }
-.btn--delete{
+.btn--completed:hover {
+  border: 2px solid var(--secondColor);
+}
+.btn--delete {
   background-color: var(--secondColor);
   color: var(--mainColor);
   border: 2px solid var(--secondColor);
   margin: 0.3em;
 }
-.btn--delete:hover{ border: 2px solid var(--mainColor); }
+.btn--delete:hover {
+  border: 2px solid var(--mainColor);
+}
 
-.task>h2{ 
+.task > h2 {
   flex: 3;
   margin: auto 0 auto 0.75em;
   overflow: none;
 }
-.task>p{ 
+.task > p {
   flex: 6;
   margin: auto 0 auto 0.75em;
 }
-.task--low{
+.task--low {
   box-shadow: -12px 0px 8px -8px var(--lowPriority);
 }
-.task--medium{
+.task--medium {
   box-shadow: -12px 0px 8px -8px var(--mediumPriority);
 }
-.task--high{
+.task--high {
   box-shadow: -12px 0px 8px -8px var(--highPriority);
 }
-.task--completed>h2,.task--completed>p{
+.task--completed {
   opacity: 33%;
+}
+.task--pending {
+  opacity: 100%;
 }
