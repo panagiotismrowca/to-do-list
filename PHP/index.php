@@ -6,10 +6,6 @@
     <script src="../JS/script.js" defer></script>
   </head>
   <body>
-    <header>
-      <h1>ToDo List</h1>
-      <button id="addTaskButton">Add new task</button> 
-    </header>
 
     <?php include "connection_db.inc.php"; 
     ini_set('display_errors', 0);
